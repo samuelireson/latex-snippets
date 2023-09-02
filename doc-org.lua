@@ -8,6 +8,10 @@ local c = ls.choice_node
 local d = ls.dynamic_node
 local r = ls.restore_node
 
+local math = function()
+	return vim.fn['vimtex#syntax#in_mathzone']() == 1
+end
+
 return {
 	-- Generalised environment
 	s(
@@ -155,7 +159,7 @@ return {
 
 	-- Matrices
 	s(
-		{ trig = "er" },
+		{ trig = "ex", snippetType = "autosnippet" },
 		{
 			t({"\\begin{pmatrix}", "\t"}),
 			i(1),
@@ -164,7 +168,7 @@ return {
 		{ condition = math }
 	),
 	s(
-		{ trig = "es" },
+		{ trig = "es", snippetType = "autosnippet" },
 		{
 			t({"\\begin{bmatrix}", "\t"}),
 			i(1),
@@ -173,7 +177,7 @@ return {
 		{ condition = math }
 	),
 	s(
-		{ trig = "ev" },
+		{ trig = "ev", snippetType = "autosnippet" },
 		{
 			t({"\\begin{vmatrix}", "\t"}),
 			i(1),
