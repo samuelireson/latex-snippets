@@ -14,7 +14,7 @@ expansion.
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
 | b{letter} | \mathbb{Letter} | math | :heavy_check_mark: |
-| e.g. bb | $ \mathbb{B} $ | math | :heavy_check_mark: |
+| e.g. bb | \mathbb{B} | math | :heavy_check_mark: |
 
 ### D - Document related
 | Trigger | Expansion | Context | Auto |
@@ -48,6 +48,6 @@ Both capital and lower case letter are available, in the cases where these chara
 ### M - Maths
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
-| mi | $$ \int_{}^{}{}\,d{} $$ | math | :heavy_check_mark: |
-| mp | $$ \prod_{}^{}{} $$ | math | :heavy_check_mark: |
-| ms | $$ \sum_{}^{}{} $$ | math | :heavy_check_mark: |
+| mi | \int_{}^{}{}\,d{} | math | :heavy_check_mark: |
+| mp | \prod_{}^{}{} | math | :heavy_check_mark: |
+| ms | \sum_{}^{}{} | math | :heavy_check_mark: |
