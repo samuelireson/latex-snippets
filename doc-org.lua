@@ -203,4 +203,42 @@ return {
 			t({"", "\\end{enumerate}", ""})
 		}
 	),
+
+	-- Left-right brackets
+	s(
+		{ trig = "la", snippetType="autosnippet" },
+		{
+			t("\\left\\langle "),
+			i(1),
+			t(" \\right\\rangle")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "lb", snippetType="autosnippet" },
+		{
+			t("\\left[ "),
+			i(1),
+			t(" \\right]")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "lp", snippetType="autosnippet" },
+		{
+			t("\\left( "),
+			i(1),
+			t(" \\right)")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "lc", snippetType="autosnippet" },
+		{
+			t("\\left\\{ "),
+			i(1),
+			t(" \\right\\}")
+		},
+		{ condition = math }
+	),
 }

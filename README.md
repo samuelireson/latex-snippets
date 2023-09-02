@@ -45,9 +45,18 @@ expansion.
 ### G - Greek letters
 Both capital and lower case letter are available, in the cases where these characters exist in latex.
 
+### L - Left-right brackets
+| Trigger | Expansion | Context | Auto |
+| --- | --- | --- | --- |
+| la | \left\langle ... \right\rangle | math | :heavy_check_mark: |
+| lb | \left[ ... \right] | math | :heavy_check_mark: |
+| lc | \left\{ ... \right\} | math | :heavy_check_mark: |
+| lp | \left( ... \right) | math | :heavy_check_mark: |
+
 ### M - Maths
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
 | mi | \int_{}^{}{}\,d{} | math | :heavy_check_mark: |
 | mp | \prod_{}^{}{} | math | :heavy_check_mark: |
 | ms | \sum_{}^{}{} | math | :heavy_check_mark: |
+| mu | \_{} | math | :heavy_check_mark: |

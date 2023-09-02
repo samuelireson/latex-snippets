@@ -322,4 +322,13 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "mu", snippetType="autosnippet" },
+		{
+			t("_{"),
+			i(1),
+			t("}")
+		},
+		{ condition = math }
+	),
 }
