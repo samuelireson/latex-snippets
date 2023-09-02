@@ -14,7 +14,7 @@ expansion.
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
 | b{letter} | \mathbb{Letter} | math | :heavy_check_mark: |
-| e.g. bb | $$ \mathbb{B} $$ | math | :heavy_check_mark: |
+| e.g. bb | $ \mathbb{B} $ | math | :heavy_check_mark: |
 
 ### D - Document related
 | Trigger | Expansion | Context | Auto |
