@@ -12,4 +12,5 @@ will expand. If a snippet is Auto - :heavy_check_mark: , there is no need to pre
 expansion.
 ### B - Blackboard Bold
 | Trigger | Expansion | Context | Auto |
+| --- | --- | --- | --- |
 | b{letter} | \mathbb{Letter} | math | :heavy_check_mark: | 
