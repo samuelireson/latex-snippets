@@ -331,4 +331,95 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "mo", snippetType="autosnippet" },
+		{
+			t("^{"),
+			i(1),
+			t("}")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ml", snippetType="autosnippet" },
+		{
+			t("\\lim_{"),
+			i(1),
+			t("}{"),
+			i(2),
+			t("}")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "mm", snippetType="autosnippet" },
+		{
+			t("\\inf_{"),
+			i(1),
+			t("}{"),
+			i(2),
+			t("}")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "mn", snippetType="autosnippet" },
+		{
+			t("\\sup_{"),
+			i(1),
+			t("}{"),
+			i(2),
+			t("}")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "md(%d)", snippetType="autosnippet", regTrig = true },
+		{
+			f(function(_, snip)
+				if snip.captures[1] == "1" then
+					return "\\frac{d "
+				else
+					return "\\frac{d^" .. snip.captures[1] .. " "
+				end
+			end, {}),
+			i(1),
+			t("}{d "),
+			i(2),
+			f(function(_, snip)
+				if snip.captures[1] == "1" then
+					return "}"
+				else
+					return "^" .. snip.captures[1] .. "}"
+				end
+			end, {})
+
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "me(%d)", snippetType="autosnippet", regTrig = true },
+		{
+			f(function(_, snip)
+				if snip.captures[1] == "1" then
+					return "\\frac{\\partial "
+				else
+					return "\\frac{\\partial^" .. snip.captures[1] .. " "
+				end
+			end, {}),
+			i(1),
+			t("}{\\partial "),
+			i(2),
+			f(function(_, snip)
+				if snip.captures[1] == "1" then
+					return "}"
+				else
+					return "^" .. snip.captures[1] .. "}"
+				end
+			end, {})
+
+		},
+		{ condition = math }
+	),
+
 }

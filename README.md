@@ -56,7 +56,13 @@ Both capital and lower case letter are available, in the cases where these chara
 ### M - Maths
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
+| md{#} | \frac{d^# }{d ^#} | math | :heavy_check_mark: |
+| me{#} | \frac{\partial^# }{\partial ^#} | math | :heavy_check_mark: |
 | mi | \int_{}^{}{}\,d{} | math | :heavy_check_mark: |
+| ml | \lim_{}{} | math | :heavy_check_mark: |
+| mm | \inf_{}{} | math | :heavy_check_mark: |
+| mn | \sup_{}{} | math | :heavy_check_mark: |
+| mo | ^{} | math | :heavy_check_mark: |
 | mp | \prod_{}^{}{} | math | :heavy_check_mark: |
 | ms | \sum_{}^{}{} | math | :heavy_check_mark: |
 | mu | \_{} | math | :heavy_check_mark: |
