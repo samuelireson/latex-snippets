@@ -332,7 +332,7 @@ return {
 		{ condition = math }
 	),
 	s(
-		{ trig = "mo", snippetType="autosnippet" },
+		{ trig = "mt", snippetType="autosnippet" },
 		{
 			t("^{"),
 			i(1),
@@ -421,5 +421,96 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "mv", snippetType="autosnippet" },
+		{
+			t("\\vec{"),
+			i(1),
+			t("}")
+		},
+		{ condition = math }
+	),
 
+	-- F - Functions
+	s(
+		{ trig = "fsin", snippetType="autosnippet" },
+		{
+			t("\\sin("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "fcos", snippetType="autosnippet" },
+		{
+			t("\\cos("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ftan", snippetType="autosnippet" },
+		{
+			t("\\tan("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "fexp", snippetType="autosnippet" },
+		{
+			t("\\exp("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "flog", snippetType="autosnippet" },
+		{
+			t("\\log("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "fln", snippetType="autosnippet" },
+		{
+			t("\\ln("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "farcsin", snippetType="autosnippet" },
+		{
+			t("\\arcsin("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "farccos", snippetType="autosnippet" },
+		{
+			t("\\arccos"),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "farctan", snippetType="autosnippet" },
+		{
+			t("\\arctan("),
+			i(1),
+			t(")")
+		},
+		{ condition = math }
+	),
 }

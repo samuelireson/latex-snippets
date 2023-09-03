@@ -42,6 +42,19 @@ expansion.
 | ev | \begin{vmatrix} ... \end{vmatrix} | math | :heavy_check_mark: |
 | ex | \begin{pmatrix} ... \end{pmatrix} | math | :heavy_check_mark: |
 
+### F - Functions
+| Trigger | Expansion | Context | Auto |
+| --- | --- | --- | --- |
+| farccos | \\arccos() | math | :heavy_check_mark: |
+| farcsin | \\arcsin() | math | :heavy_check_mark: |
+| farctan | \\arctan() | math | :heavy_check_mark: |
+| fcos | \\cos() | math | :heavy_check_mark: |
+| fexp | \\exp() | math | :heavy_check_mark: |
+| fln | \\ln() | math | :heavy_check_mark: |
+| flog | \\log() | math | :heavy_check_mark: |
+| fsin | \\sin() | math | :heavy_check_mark: |
+| ftan | \\tan() | math | :heavy_check_mark: |
+
 ### G - Greek letters
 Both capital and lower case letter are available, in the cases where these characters exist in latex.
 
@@ -62,7 +75,8 @@ Both capital and lower case letter are available, in the cases where these chara
 | ml | \lim_{}{} | math | :heavy_check_mark: |
 | mm | \inf_{}{} | math | :heavy_check_mark: |
 | mn | \sup_{}{} | math | :heavy_check_mark: |
-| mo | ^{} | math | :heavy_check_mark: |
 | mp | \prod_{}^{}{} | math | :heavy_check_mark: |
 | ms | \sum_{}^{}{} | math | :heavy_check_mark: |
+| mt | ^{} | math | :heavy_check_mark: |
 | mu | \_{} | math | :heavy_check_mark: |
+| mv | \vec{} | math | :heavy_check_mark: |
