@@ -71,6 +71,7 @@ Both capital and lower case letter are available, in the cases where these chara
 | --- | --- | --- | --- |
 | md{#} | \frac{d^# }{d ^#} | math | :heavy_check_mark: |
 | me{#} | \frac{\partial^# }{\partial ^#} | math | :heavy_check_mark: |
+| mf | \frac{}{} | math | :heavy_check_mark: |
 | mi | \int_{}^{}{}\,d{} | math | :heavy_check_mark: |
 | ml | \lim_{}{} | math | :heavy_check_mark: |
 | mm | \inf_{}{} | math | :heavy_check_mark: |
