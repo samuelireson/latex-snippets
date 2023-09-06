@@ -139,6 +139,45 @@ return {
 		}
 	),
 
+	s(
+		{ trig = "dp" },
+		{
+			t({
+				"\\documentclass{beamer}",
+				"",
+				"\\input{E:/Sam/Documents/Year 3/preamble/presentation-preamble.tex}",
+				"",
+				"\\title{"
+			}),
+			i(1),
+			t({
+				"}",
+				"",
+				"\\institute{\\large \\textbf{Learning Outcomes}: \\\\[6pt] "
+			}),
+			i(2),
+			t({
+				"}",
+				"",
+				"\\begin{document}",
+				"\\begin{frame}",
+				"\\titlepage",
+				"\\end{frame}",
+				"",
+				"\\begin{frame}{Outline}",
+				"\\tableofcontents[pausesections]",
+				"\\end{frame}",
+				"",
+				""
+			}),
+			i(0),
+			t({
+				"",
+				"\\end{document}"
+			})
+		}
+	),
+
 	-- Maths related environments
 	s(
 		{ trig = "ei" },

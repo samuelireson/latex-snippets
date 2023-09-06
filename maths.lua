@@ -513,4 +513,42 @@ return {
 		},
 		{ condition = math }
 	),
+
+	-- P - Presentation
+	s(
+		{ trig = "pf" },
+		{
+			t({"\\begin{frame}", "\\frametitle{"}),
+			i(1),
+			t({"}", ""}),
+			i(2),
+			t({"", "\\end{frame}", ""})
+		}
+	),
+	s(
+		{ trig = "ps" },
+		{
+			t({"\\begin{slide}", ""}),
+			i(1),
+			t({"", "\\end{slide}", ""})
+		}
+	),
+	s(
+		{ trig = "pu" },
+		{
+			t({"\\begin{itemize}[<+-| alert@+>]", ""}),
+			i(1),
+			t({"", "\\end{itemize}", ""})
+		}
+	),
+	s(
+		{ trig = "pl" },
+		{
+			t("\\lecture{"),
+			i(1),
+			t("}{"),
+			i(2),
+			t("}","")
+		}
+	),
 }

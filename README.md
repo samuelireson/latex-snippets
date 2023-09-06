@@ -81,3 +81,11 @@ Both capital and lower case letter are available, in the cases where these chara
 | mt | ^{} | math | :heavy_check_mark: |
 | mu | \_{} | math | :heavy_check_mark: |
 | mv | \vec{} | math | :heavy_check_mark: |
+
+### P - Presentation
+| Trigger | Expansion | Context | Auto |
+| --- | --- | --- | --- |
+| pf | \begin{frame} ... \end{frame} | document | :x: |
+| pl | \lecture{} | document | :x: |
+| ps | \begin{slide} ... \end{slide} | document | :x: |
+| pu | \begin{itemze}[] ... \end{itemize} | document | :x: |
