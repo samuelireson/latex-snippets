@@ -10,6 +10,26 @@ snippet will be expanded. The expansion is what the snippet will expand to. The
 context makes reference to the places in a latex document in which the snippet
 will expand. If a snippet is Auto - :heavy_check_mark: , there is no need to press TAB for
 expansion.
+
+### A - Logical operators
+| Trigger | Expansion | Context | Auto |
+| --- | --- | --- | --- |
+| aa | \equiv | math | :heavy_check_mark: |
+| ab | \impliedby | math | :heavy_check_mark: |
+| ac | \ni | math | :heavy_check_mark: |
+| ae | \iff | math | :heavy_check_mark: |
+| af | \forall | math | :heavy_check_mark: |
+| ai | \in | math | :heavy_check_mark: |
+| am | \setminus | math | :heavy_check_mark: |
+| an | \neq | math | :heavy_check_mark: |
+| ar | \subset | math | :heavy_check_mark: |
+| a-r | \subseteq | math | :heavy_check_mark: |
+| as | \supset | math | :heavy_check_mark: |
+| a-s | \supseteq | math | :heavy_check_mark: |
+| at | \implies | math | :heavy_check_mark: |
+
+
+
 ### B - Blackboard Bold
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
@@ -78,9 +98,11 @@ Both capital and lower case letter are available, in the cases where these chara
 | mn | \sup_{}{} | math | :heavy_check_mark: |
 | mp | \prod_{}^{}{} | math | :heavy_check_mark: |
 | ms | \sum_{}^{}{} | math | :heavy_check_mark: |
-| mt | ^{} | math | :heavy_check_mark: |
-| mu | \_{} | math | :heavy_check_mark: |
 | mv | \vec{} | math | :heavy_check_mark: |
+| mx | \times | math | :heavy_check_mark: |
+| mz | \infty | math | :heavy_check_mark: |
+| ^ | ^{} | math | :heavy_check_mark: |
+| \_ | \_{} | math | :heavy_check_mark: |
 
 ### P - Presentation
 | Trigger | Expansion | Context | Auto |
@@ -89,3 +111,9 @@ Both capital and lower case letter are available, in the cases where these chara
 | pl | \lecture{} | document | :x: |
 | ps | \begin{slide} ... \end{slide} | document | :x: |
 | pu | \begin{itemze}[] ... \end{itemize} | document | :x: |
+
+### T - Type faces
+| Trigger | Expansion | Context | Auto |
+| --- | --- | --- | --- |
+| tc | \cal{} | math | :heavy_check_mark: |
+| tf | \frak{} | math | :heavy_check_mark: |

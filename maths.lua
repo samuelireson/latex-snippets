@@ -9,6 +9,71 @@ local math = function()
 end
 
 return {
+	-- A - Logical operators
+	s(
+		{ trig = "ab", snippetType="autosnippet" },
+		{
+			t("\\impliedby ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ae", snippetType="autosnippet" },
+		{
+			t("\\iff ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "at", snippetType="autosnippet" },
+		{
+			t("\\implies ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ai", snippetType="autosnippet" },
+		{
+			t("\\in ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ac", snippetType="autosnippet" },
+		{
+			t("\\ni ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ar", snippetType="autosnippet" },
+		{
+			t("\\subset ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "a-r", snippetType="autosnippet" },
+		{
+			t("\\subseteq ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "as", snippetType="autosnippet" },
+		{
+			t("\\supset ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "a-s", snippetType="autosnippet" },
+		{
+			t("\\supseteq ")
+		},
+		{ condition = math }
+	),
+
 
 	-- Blackboard bold
 	s(
@@ -323,7 +388,7 @@ return {
 		{ condition = math }
 	),
 	s(
-		{ trig = "mu", snippetType="autosnippet" },
+		{ trig = "_", snippetType="autosnippet" },
 		{
 			t("_{"),
 			i(1),
@@ -332,7 +397,7 @@ return {
 		{ condition = math }
 	),
 	s(
-		{ trig = "mt", snippetType="autosnippet" },
+		{ trig = "^", snippetType="autosnippet" },
 		{
 			t("^{"),
 			i(1),
@@ -430,6 +495,34 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "mx", snippetType="autosnippet" },
+		{
+			t("\\times ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "mz", snippetType="autosnippet" },
+		{
+			t("\\infty")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "an", snippetType="autosnippet" },
+		{
+			t("\\neq")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "aa", snippetType="autosnippet" },
+		{
+			t("\\equiv")
+		},
+		{ condition = math }
+	),
 
 	-- F - Functions
 	s(
@@ -498,7 +591,7 @@ return {
 	s(
 		{ trig = "farccos", snippetType="autosnippet" },
 		{
-			t("\\arccos"),
+			t("\\arccos("),
 			i(1),
 			t(")")
 		},
@@ -551,4 +644,24 @@ return {
 			t("}","")
 		}
 	),
+
+	-- T - Type faces
+	s(
+		{ trig = "tc", snippetType="autosnippet" },
+		{
+			t("\\cal{"),
+			i(1),
+			t("}")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "tf", snippetType="autosnippet" },
+		{
+			t("\\frak{"),
+			i(1),
+			t("}")
+		},
+		{ condition = math }
+	)
 }
