@@ -73,6 +73,13 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "ax", snippetType="autosnippet" },
+		{
+			t("\\not")
+		},
+		{ condition = math }
+	),
 
 
 	-- Blackboard bold
@@ -525,6 +532,13 @@ return {
 	),
 
 	-- F - Functions
+	s(
+		{ trig = "fm", snippetType="autosnippet" },
+		{
+			t("\\to")
+		},
+		{ condition = math }
+	),
 	s(
 		{ trig = "fsin", snippetType="autosnippet" },
 		{

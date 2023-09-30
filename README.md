@@ -27,6 +27,7 @@ expansion.
 | as | \supset | math | :heavy_check_mark: |
 | a-s | \supseteq | math | :heavy_check_mark: |
 | at | \implies | math | :heavy_check_mark: |
+| ax | \not | math | :heavy_check_mark: |
 
 
 
@@ -72,6 +73,7 @@ expansion.
 | fexp | \\exp() | math | :heavy_check_mark: |
 | fln | \\ln() | math | :heavy_check_mark: |
 | flog | \\log() | math | :heavy_check_mark: |
+| fm | \\to | math | :heavy_check_mark: |
 | fsin | \\sin() | math | :heavy_check_mark: |
 | ftan | \\tan() | math | :heavy_check_mark: |
 
