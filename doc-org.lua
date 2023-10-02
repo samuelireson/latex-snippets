@@ -97,6 +97,14 @@ return {
 		}
 	),
 	s(
+		{ trig = "di" },
+		{
+			t("\\input{chapters/chapter-"),
+			i(1),
+			t("}")
+		}
+	),
+	s(
 		{ trig = "ds", snippetType = "snippet" },
 		{
 			t("\\section{"),

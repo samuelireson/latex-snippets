@@ -41,6 +41,7 @@ expansion.
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
 | dc | \chapter{} | document | :x: |
+| di | \input{chapter-} | document | :x: |
 | dn | *Notes template* | document | :x: |
 | ds | \section{} | document | :x: |
 | dt | \subsection{} | document | :x: |
