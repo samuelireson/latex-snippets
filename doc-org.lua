@@ -235,7 +235,7 @@ return {
 
 	-- Lists
 	s(
-		{ trig = "eo" },
+		{ trig = "eu" },
 		{
 			t({"\\begin{itemize}", "\t\\item "}),
 			i(1),
@@ -243,7 +243,7 @@ return {
 		}
 	),
 	s(
-		{ trig = "eu" },
+		{ trig = "eo" },
 		{
 			t({"\\begin{enumerate}", "\t\\item "}),
 			i(1),

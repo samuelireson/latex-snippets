@@ -37,6 +37,12 @@ expansion.
 | b{letter} | \mathbb{Letter} | math | :heavy_check_mark: |
 | e.g. bb | \mathbb{B} | math | :heavy_check_mark: |
 
+### C - Caligraphic
+| Trigger | Expansion | Context | Auto |
+| --- | --- | --- | --- |
+| b{letter} | \mathbb{Letter} | math | :heavy_check_mark: |
+| e.g. bb | \mathbb{B} | math | :heavy_check_mark: |
+
 ### D - Document related
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
@@ -54,6 +60,7 @@ expansion.
 | ed | \begin{definition} ... \end{definition} | document | :x: |
 | ee | \begin{example} ... \end{example} | document | :x: |
 | ei | \$ ... \$ | document | :x: |
+| ej | \$\$ ... \$\$ | document | :x: |
 | el | \begin{lemma} ... \end{lemma} | document | :x: |
 | eo | \begin{enumerate} ... \end{enumerate} | document | :x: |
 | ep | \begin{proposition} ... \end{proposition} | document | :x: |
@@ -118,5 +125,5 @@ Both capital and lower case letter are available, in the cases where these chara
 ### T - Type faces
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
-| tc | \cal{} | math | :heavy_check_mark: |
 | tf | \frak{} | math | :heavy_check_mark: |
+| to | \overline{} | math | :heavy_check_mark: |

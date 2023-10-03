@@ -25,6 +25,13 @@ return {
 		{ condition = math }
 	),
 	s(
+		{ trig = "af", snippetType="autosnippet" },
+		{
+			t("\\forall ")
+		},
+		{ condition = math }
+	),
+	s(
 		{ trig = "at", snippetType="autosnippet" },
 		{
 			t("\\implies ")
@@ -92,7 +99,15 @@ return {
 		},
 		{ condition = math}
 	),
-
+	s(
+		{ trig = "c(%a)", regTrig = true, snippetType = "autosnippet" },
+		{
+			f(function(_, snip)
+				return "\\mathcal{" .. string.upper(snip.captures[1]) .. "}"
+			end, {})
+		},
+		{ condition = math}
+	),
 	-- Greek letters
 	s(
 		{ trig = "ga", snippetType = "autosnippet" },
@@ -661,15 +676,6 @@ return {
 
 	-- T - Type faces
 	s(
-		{ trig = "tc", snippetType="autosnippet" },
-		{
-			t("\\cal{"),
-			i(1),
-			t("}")
-		},
-		{ condition = math }
-	),
-	s(
 		{ trig = "tf", snippetType="autosnippet" },
 		{
 			t("\\frak{"),
@@ -677,5 +683,14 @@ return {
 			t("}")
 		},
 		{ condition = math }
-	)
+	),
+	s(
+		{ trig = "to", snippetType="autosnippet" },
+		{
+			t("\\overline{"),
+			i(1),
+			t("}")
+		},
+		{ condition = math }
+	),
 }
