@@ -99,6 +99,8 @@ return {
 		},
 		{ condition = math}
 	),
+
+	-- Caligraphic
 	s(
 		{ trig = "c(%a)", regTrig = true, snippetType = "autosnippet" },
 		{
@@ -108,6 +110,7 @@ return {
 		},
 		{ condition = math}
 	),
+
 	-- Greek letters
 	s(
 		{ trig = "ga", snippetType = "autosnippet" },
@@ -378,9 +381,6 @@ return {
 			t("}^{"),
 			i(2),
 			t("}{"),
-			i(3),
-			t("}\\,d "),
-			i(4)
 		},
 		{ condition = math }
 	),
@@ -392,9 +392,28 @@ return {
 			t("}^{"),
 			i(2),
 			t("}{"),
-			i(3),
-			t("}\\,d "),
-			i(4)
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ma", snippetType="autosnippet" },
+		{
+			t("\\bigcap_{"),
+			i(1),
+			t("}^{"),
+			i(2),
+			t("}{"),
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "mu", snippetType="autosnippet" },
+		{
+			t("\\bigcup_{"),
+			i(1),
+			t("}^{"),
+			i(2),
+			t("}{"),
 		},
 		{ condition = math }
 	),

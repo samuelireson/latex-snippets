@@ -47,6 +47,8 @@ expansion.
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
 | dc | \chapter{} | document | :x: |
+| df-t | *tikz figure* | document | :x: |
+| df-p | *pdf figure* | document | :x: |
 | di | \input{chapter-} | document | :x: |
 | dn | *Notes template* | document | :x: |
 | ds | \section{} | document | :x: |
@@ -99,6 +101,7 @@ Both capital and lower case letter are available, in the cases where these chara
 ### M - Maths
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
+| ma | \bigcap_{}^{}{} | math | :heavy_check_mark: |
 | md{#} | \frac{d^# }{d ^#} | math | :heavy_check_mark: |
 | me{#} | \frac{\partial^# }{\partial ^#} | math | :heavy_check_mark: |
 | mf | \frac{}{} | math | :heavy_check_mark: |
@@ -108,6 +111,7 @@ Both capital and lower case letter are available, in the cases where these chara
 | mn | \sup_{}{} | math | :heavy_check_mark: |
 | mp | \prod_{}^{}{} | math | :heavy_check_mark: |
 | ms | \sum_{}^{}{} | math | :heavy_check_mark: |
+| mu | \bigcup_{}^{}{} | math | :heavy_check_mark: |
 | mv | \vec{} | math | :heavy_check_mark: |
 | mx | \times | math | :heavy_check_mark: |
 | mz | \infty | math | :heavy_check_mark: |

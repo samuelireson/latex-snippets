@@ -86,6 +86,14 @@ return {
 			t({"", "\\end{remark}", ""})
 		}
 	),
+	s(
+		{ trig = "em" },
+		{
+			t({"\\begin{minted}{python}", ""}),
+			i(1),
+			t({"", "\\end{minted}", ""})
+		}
+	),
 
 	-- Specific DocOrg
 	s(
@@ -183,6 +191,26 @@ return {
 				"",
 				"\\end{document}"
 			})
+		}
+	),
+	s(
+		{ trig = "df-p" },
+		{
+			t({"\\begin{figure}[ht]", "\\centering", "\\incfig{"}),
+			i(1),
+			t({"}", "\\caption{"}),
+			i(2),
+			t({"}", "\\label{fig:"}),
+			rep(1),
+			t({"}", "\\end{figure}", ""})
+		}
+	),
+	s(
+		{ trig = "df-t" },
+		{
+			t({"\\begin{figure}[ht]", "\\centering", "\\resizebox{\\columnwidth}{!}{", "\\begin{tikzpicture}", ""}),
+			i(1),
+			t({"", "\\end{tikzpicture}}", "\\caption{}", "\\label{fig:}"}),
 		}
 	),
 
