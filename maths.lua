@@ -87,6 +87,41 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "am", snippetType="autosnippet" },
+		{
+			t("\\setminus ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "an", snippetType="autosnippet" },
+		{
+			t("\\neq")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "az", snippetType="autosnippet" },
+		{
+			t("\\equiv")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "aa", snippetType="autosnippet" },
+		{
+			t("\\cap ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "au", snippetType="autosnippet" },
+		{
+			t("\\cup ")
+		},
+		{ condition = math }
+	),
 
 
 	-- Blackboard bold
@@ -381,6 +416,8 @@ return {
 			t("}^{"),
 			i(2),
 			t("}{"),
+			i(3),
+			t("}")
 		},
 		{ condition = math }
 	),
@@ -392,6 +429,9 @@ return {
 			t("}^{"),
 			i(2),
 			t("}{"),
+			i(3),
+			t("}")
+
 		},
 		{ condition = math }
 	),
@@ -403,6 +443,8 @@ return {
 			t("}^{"),
 			i(2),
 			t("}{"),
+			i(3),
+			t("}")
 		},
 		{ condition = math }
 	),
@@ -414,6 +456,8 @@ return {
 			t("}^{"),
 			i(2),
 			t("}{"),
+			i(3),
+			t("}")
 		},
 		{ condition = math }
 	),
@@ -550,20 +594,7 @@ return {
 		},
 		{ condition = math }
 	),
-	s(
-		{ trig = "an", snippetType="autosnippet" },
-		{
-			t("\\neq")
-		},
-		{ condition = math }
-	),
-	s(
-		{ trig = "aa", snippetType="autosnippet" },
-		{
-			t("\\equiv")
-		},
-		{ condition = math }
-	),
+
 
 	-- F - Functions
 	s(
@@ -712,4 +743,35 @@ return {
 		},
 		{ condition = math }
 	),
+
+	-- Quantum mechanics specific
+	s(
+		{ trig = "q-b", snippetType="autosnippet" },
+		{
+			t("\\langle "),
+			i(1),
+			t(" | ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "q-k", snippetType="autosnippet" },
+		{
+			t("| "),
+			i(1),
+			t(" \\rangle ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "qbk", snippetType="autosnippet" },
+		{
+			t("\\langle "),
+			i(1),
+			t(" | "),
+			i(2),
+			t(" \\rangle ")
+		},
+		{ condition = math }
+	)
 }

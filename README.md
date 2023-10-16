@@ -14,7 +14,7 @@ expansion.
 ### A - Logical operators
 | Trigger | Expansion | Context | Auto |
 | --- | --- | --- | --- |
-| aa | \equiv | math | :heavy_check_mark: |
+| aa | \cap | math | :heavy_check_mark: |
 | ab | \impliedby | math | :heavy_check_mark: |
 | ac | \ni | math | :heavy_check_mark: |
 | ae | \iff | math | :heavy_check_mark: |
@@ -27,8 +27,9 @@ expansion.
 | as | \supset | math | :heavy_check_mark: |
 | a-s | \supseteq | math | :heavy_check_mark: |
 | at | \implies | math | :heavy_check_mark: |
+| au | \cup | math | :heavy_check_mark: |
 | ax | \not | math | :heavy_check_mark: |
-
+| az | \equiv | math | :heavy_check_mark: |
 
 
 ### B - Blackboard Bold
