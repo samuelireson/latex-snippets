@@ -28,7 +28,8 @@ expansion.
 | a-s | \supseteq | math | :heavy_check_mark: |
 | at | \implies | math | :heavy_check_mark: |
 | au | \cup | math | :heavy_check_mark: |
-| ax | \not | math | :heavy_check_mark: |
+| ax | \exists | math | :heavy_check_mark: |
+| ay | \not | math | :heavy_check_mark: |
 | az | \equiv | math | :heavy_check_mark: |
 
 

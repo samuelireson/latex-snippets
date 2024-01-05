@@ -86,14 +86,6 @@ return {
 			t({"", "\\end{remark}", ""})
 		}
 	),
-	s(
-		{ trig = "em" },
-		{
-			t({"\\begin{minted}{python}", ""}),
-			i(1),
-			t({"", "\\end{minted}", ""})
-		}
-	),
 
 	-- Specific DocOrg
 	s(
@@ -208,9 +200,9 @@ return {
 	s(
 		{ trig = "df-t" },
 		{
-			t({"\\begin{figure}[ht]", "\\centering", "\\resizebox{\\columnwidth}{!}{", "\\begin{tikzpicture}", ""}),
+			t({"\\begin{figure}[ht]", "\\centering", "\\begin{tikzpicture}", ""}),
 			i(1),
-			t({"", "\\end{tikzpicture}}", "\\caption{}", "\\label{fig:}"}),
+			t({"", "\\end{tikzpicture}", "\\caption{}","\\end{figure}", "\\label{fig:}"}),
 		}
 	),
 
@@ -316,4 +308,22 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "lu", snippetType="autosnippet" },
+		{
+			t("\\left\\lceil "),
+			i(1),
+			t(" \\right\\rceil")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ld", snippetType="autosnippet" },
+		{
+			t("\\left\\lfloor "),
+			i(1),
+			t(" \\right\\rfloor")
+		},
+		{ condition = math }
+	)
 }

@@ -81,9 +81,16 @@ return {
 		{ condition = math }
 	),
 	s(
-		{ trig = "ax", snippetType="autosnippet" },
+		{ trig = "ay", snippetType="autosnippet" },
 		{
 			t("\\not")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ax", snippetType="autosnippet" },
+		{
+			t("\\exists ")
 		},
 		{ condition = math }
 	),
@@ -598,9 +605,23 @@ return {
 
 	-- F - Functions
 	s(
+		{ trig = "fn", snippetType="autosnippet" },
+		{
+			t("\\to ")
+		},
+		{ condition = math }
+	),
+	s(
 		{ trig = "fm", snippetType="autosnippet" },
 		{
-			t("\\to")
+			t("\\mapsto ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "fo", snippetType="autosnippet" },
+		{
+			t("\\circ ")
 		},
 		{ condition = math }
 	),
@@ -743,6 +764,47 @@ return {
 		},
 		{ condition = math }
 	),
+	s(
+		{ trig = "tt", snippetType="autosnippet" },
+		{
+			t("\\tilde{"),
+			i(1),
+			t("} ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "th", snippetType="autosnippet" },
+		{
+			t("\\hat{"),
+			i(1),
+			t("} ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "td", snippetType="autosnippet" },
+		{
+			t("^{\\dagger}")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "ts", snippetType="autosnippet" },
+		{
+			t("^{*}")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "tr", snippetType="autosnippet" },
+		{
+			t("\\mathrm{"),
+			i(1),
+			t("}")
+		},
+		{ condition = math }
+	),
 
 	-- Quantum mechanics specific
 	s(
@@ -771,6 +833,13 @@ return {
 			t(" | "),
 			i(2),
 			t(" \\rangle ")
+		},
+		{ condition = math }
+	),
+	s(
+		{ trig = "qp", snippetType="autosnippet" },
+		{
+			t("\\oplus ")
 		},
 		{ condition = math }
 	)
